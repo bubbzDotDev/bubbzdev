@@ -56,7 +56,10 @@ body {
 
   a {
     color: #FE7A71;
+    background-color: #000;;
     text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
   }
 
   a:hover {
