@@ -6,7 +6,7 @@ body {
     padding: 0.5rem;
   }
 
-  div {
+  main {
       margin: 0 auto;
       border: 0.25rem dashed #ccc;
       border-radius: 1rem;
