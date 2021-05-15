@@ -1,2 +1,3 @@
 # Welcome to the exercise!
-## Git Commands:
+## CLI & Git Commands:
+Test.
