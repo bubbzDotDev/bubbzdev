@@ -30,10 +30,15 @@
 1. Stage your changes: `git add .` or `git add index.html`
 1. Commit your changes: `git commit -m "My detailed message goes here."`
 1. Switch back to main branch: `git checkout main`
-1. Merge branches: `git merge branch-with-changes`
+1. Merge branches: `git merge new-branch-name`
 1. Push changes: `git push origin main`
+### Pull Request:
 1. Go to your repo in the browser and click **Contribute**
 1. Click **Open pull request**
+1. Click **Create pull request**
+1. Add a title and leave a comment if you like.
+1. Click **Create pull request**
+1. That's it! I'll get an email and then I'll merge your request.
 ### Resources:
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
