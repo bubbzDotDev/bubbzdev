@@ -1,2 +1,2 @@
-### bubbz.dev source
-
+# Welcome to the exercise!
+## Git Commands:
