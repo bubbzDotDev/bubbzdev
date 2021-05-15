@@ -8,7 +8,7 @@
 1. `cd` into new directory: `cd new-directory`
 ### Accessing the repository:
 1. Open the GitHub repository (repo) [link](https://github.com/bubbzDotDev/bubbzdev)
-1. Click the **Fork** button to fork it into your repo.
+1. Click the **Fork** button to fork it into your own repo.
 1. Click the green **Code** button and copy the URL
 1. In your terminal, `git clone` the repo: `git clone https://github.com/*your-user-name*/bubbzdev.git`
 1. `cd` into the newly created repo directory: `cd bubbzdev`
@@ -33,9 +33,7 @@
 1. Merge branches: `git merge branch-with-changes`
 1. Go to repo in the browswer
 1. Click **Compare & pull request**
-1. git checkout main
-1. git merge --no-ff demo
-1. git push origin main
+1. `git push origin main`
 ### Resources:
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
