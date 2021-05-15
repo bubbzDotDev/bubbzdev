@@ -31,7 +31,8 @@
 1. Commit your changes: `git commit -m "My detailed message goes here."`
 1. Switch back to main branch: `git checkout main`
 1. Merge branches: `git merge branch-with-changes`
-1. Go to repo in the browswer
+1. Push changes: `git push origin main`
+1. Go to repo in the browser
 1. Click **Compare & pull request**
 1. `git push origin main`
 ### Resources:
