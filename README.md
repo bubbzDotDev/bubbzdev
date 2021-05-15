@@ -39,8 +39,10 @@
 ### Resources:
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+- [GitHub Documentation](https://docs.github.com/en)
 - ["What is Git? A Beginner's Guide to Git Version Control"](https://www.freecodecamp.org/news/what-is-git-learn-git-version-control/)
 - ["How to Use Branches in Git - the Ultimate Cheatsheet"](https://www.freecodecamp.org/news/how-to-use-branches-in-git/)
 - ["How to Use Git and Git Workflows - a Practical Guide"](https://www.freecodecamp.org/news/practical-git-and-git-workflows/)
+- [Atlassian tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [How I learned to format this README.md file](https://www.markdownguide.org/basic-syntax/)
 - [Extension I used to preview the markdown file in VS Code](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
