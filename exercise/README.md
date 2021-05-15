@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to the exercise!
 ## CLI & Git Commands
 ### Prepping the environment:
