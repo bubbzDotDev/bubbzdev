@@ -2,6 +2,74 @@
     font-size: 16px;
 }
 
-h1 {
-    color: red;
+body {
+    display: grid;
+    grid-template-rows: 11rem 1fr 7rem;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgba(53, 52, 52, 0.945);
+}
+
+a {
+    color: rgba(53, 52, 52, 0.945);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+footer {
+    background-color: rgba(204, 204, 204, 0.897);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.setup img {
+    height: 40px;
+    width: 179px;
+}
+
+.card {
+    margin: 0.5rem auto;
+    width: fit-content;
+    border: 0.15rem dashed rgba(204, 204, 204, 0.897);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.card a {
+    background-color: rgba(53, 52, 52, 0.945);
+    color: #fff;
+    border-radius: 0.15rem;
+    padding: 0.15rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+li {
+    text-align: left;
+    padding: 0.3rem;
+}
+
+footer {
+    padding: 1rem;
 }
