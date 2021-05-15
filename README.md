@@ -1,2 +1,1 @@
-# Welcome to the exercise!
-## Git Commands:
+# My future portfolio site
