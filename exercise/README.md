@@ -1,6 +1,6 @@
 # Welcome to the exercise!
 ## CLI & Git Commands
-### Prepping the environment:
+### Preparing the environment:
 1. Open your terminal
 1. Change directory (`cd`) into desired parent directory: `cd my-directory`
 1. Use `mkdir` to make a new directory: `mkdir new-directory`
