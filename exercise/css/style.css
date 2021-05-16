@@ -31,6 +31,8 @@ header img {
     top: 0;
     right: 0;
     padding: 0.5rem;
+    width: 30px;
+    height: auto;
 }
 
 header,
@@ -48,8 +50,8 @@ h2 {
 }
 
 .setup img {
-    height: 40px;
     width: 179px;
+    height: auto;
 }
 
 .card {
