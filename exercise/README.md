@@ -50,3 +50,4 @@
 - [Atlassian tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [How I learned to format this README.md file](https://www.markdownguide.org/basic-syntax/)
 - [Extension I used to preview the markdown file in VS Code](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- How to get the `code` command activated on your machine: [https://code.visualstudio.com/docs/editor/command-line](https://code.visualstudio.com/docs/editor/command-line)
