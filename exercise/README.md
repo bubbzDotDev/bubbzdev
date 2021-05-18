@@ -12,7 +12,7 @@
 1. Click the green **Code** button and copy the URL
 1. In your terminal, `git clone` the repo: `git clone https://github.com/*your-user-name*/bubbzdev.git`
 1. `cd` into the newly created repo directory: `cd bubbzdev`
-1. Open VS Code with this command: `code .` (Or, open VS Code manually and open the *bubbzdev* folder)
+1. Open VS Code with this command: `code .` (Or, open VS Code manually and open the *bubbzdev* folder.)
 ### Let's do this:
 1. Open the **exercise** folder in VS Code Explorer pane
 1. Open **index.html** in the exercise folder
