@@ -56,7 +56,8 @@ h2 {
 
 .card {
     margin: 0.5rem auto;
-    width: fit-content;
+    width: 95%;
+    max-width: 25rem;
     border: 0.15rem dashed rgba(204, 204, 204, 0.897);
     border-radius: 0.5rem;
     padding: 0.5rem;

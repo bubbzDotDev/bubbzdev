@@ -27,7 +27,7 @@
 1. Paste the copied `<div>` below that comment. *We want each new addition to be above the rest.*
 1. Personalize your `<div>` to your liking
 ### Wrapping up:
-1. Stage your changes: `git add .` or `git add index.html`
+1. Stage your changes: `git add .` or `git add exercise/index.html`
 1. Commit your changes: `git commit -m "My detailed message goes here."`
 1. Switch back to main branch: `git checkout main`
 1. Merge branches: `git merge new-branch-name`
