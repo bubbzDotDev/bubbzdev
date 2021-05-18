@@ -39,6 +39,7 @@
 1. Add a title and leave a comment if you like.
 1. Click **Create pull request**
 1. That's it! I'll get an email and then I'll merge your request.
+1. Here's a [link to get back to the live site](https://www.bubbz.dev/exercise/) in case you need it.
 ### Resources:
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
