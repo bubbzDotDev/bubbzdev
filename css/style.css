@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto Condensed", Verdana, sans-serif;
-  font-size: 16px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
   display: flex;
   align-items: center;
   margin: 0 2rem;
@@ -65,14 +65,9 @@ svg {
   font-weight: bold;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
 .project-link {
   display: block;
-  background-color: #FE7A71;
+  background-color: #fe7a71;
   border-radius: 6px;
   padding: 1rem;
   text-decoration: none;
@@ -80,20 +75,28 @@ svg {
   color: black;
   transition: 1s;
   width: 200px;
+  height: 80px;
   text-align: center;
-}
-
-.project-link:hover {
-  background-color: black;
-  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
 }
 
 .project-link p {
   opacity: 1;
   transition: 0.5s;
-  font-size: smaller;
+  font-size: 0.7rem;
   color: black;
   margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-link:hover {
+  background-color: black;
+  color: white;
 }
 
 .project-link:hover p {
