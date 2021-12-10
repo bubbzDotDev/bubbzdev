@@ -12,7 +12,7 @@
 1. Click the green **Code** button and copy the URL
 1. In your terminal, `git clone` the repo: `git clone https://github.com/*your-user-name*/bubbzdev.git`
 1. `cd` into the newly created repo directory: `cd bubbzdev`
-1. Open VS Code with this command: `code .` (Or, open VS Code manually and open the *bubbzdev* folder)
+1. Open VS Code with this command: `code .` (Or, open VS Code manually and open the *bubbzdev* folder.)
 ### Let's do this:
 1. Open the **exercise** folder in VS Code Explorer pane
 1. Open **index.html** in the exercise folder
@@ -27,7 +27,7 @@
 1. Paste the copied `<div>` below that comment. *We want each new addition to be above the rest.*
 1. Personalize your `<div>` to your liking
 ### Wrapping up:
-1. Stage your changes: `git add .` or `git add index.html`
+1. Stage your changes: `git add .` or `git add exercise/index.html`
 1. Commit your changes: `git commit -m "My detailed message goes here."`
 1. Switch back to main branch: `git checkout main`
 1. Merge branches: `git merge new-branch-name`
@@ -39,6 +39,7 @@
 1. Add a title and leave a comment if you like.
 1. Click **Create pull request**
 1. That's it! I'll get an email and then I'll merge your request.
+1. Here's a [link to get back to the live site](https://www.bubbz.dev/exercise/) in case you need it.
 ### Resources:
 - [Git Documentation](https://git-scm.com/doc)
 - [GitHub Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
@@ -49,3 +50,4 @@
 - [Atlassian tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [How I learned to format this README.md file](https://www.markdownguide.org/basic-syntax/)
 - [Extension I used to preview the markdown file in VS Code](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
+- How to get the `code` command activated on your machine to [easily launch VS Code from the command line](https://code.visualstudio.com/docs/editor/command-line)
