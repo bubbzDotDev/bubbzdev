@@ -116,3 +116,10 @@ svg {
 .project-link:hover p {
   opacity: 0;
 }
+
+.details-link {
+  padding: 0.25rem;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
