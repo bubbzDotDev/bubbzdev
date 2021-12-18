@@ -6,7 +6,7 @@ body {
   margin: 0 2rem;
 }
 
-main {
+.container {
   margin: 2rem auto;
   border: 0.25rem dashed #ccc;
   border-radius: 1rem;
@@ -41,7 +41,7 @@ li {
 
 li > p {
   font-size: 0.9rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 li > p a {
@@ -125,6 +125,7 @@ svg {
   color: white;
   border-radius: 7px;
   transition: 1s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
 }
 
 .details-link:hover {
@@ -132,6 +133,11 @@ svg {
   text-decoration: none;
 }
 
-.social {
+.social-list {
   justify-content: left;
+}
+
+.project-list > li > p {
+  display: flex;
+  justify-content: space-evenly;
 }
