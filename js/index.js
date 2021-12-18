@@ -1,4 +1,4 @@
-function displayIcons(items, list) {
+const displayIcons = (items, list) => {
   items.forEach(item => {
     const li = document.createElement('li');
     li.innerHTML = `
@@ -13,11 +13,12 @@ function displayIcons(items, list) {
   });
 }
 
-function displayProjects(items, list) {
+const displayProjects = (items, list) => {
   items.forEach(item => {
     const li = document.createElement('li');
 
     if (item.code && item.video) {
+
       li.innerHTML = `
         <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
           ${item.name}
@@ -29,7 +30,9 @@ function displayProjects(items, list) {
         </p>
       `;
       list.appendChild(li);
+
     } else {
+
       li.innerHTML = `
         <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
           ${item.name}
@@ -37,6 +40,7 @@ function displayProjects(items, list) {
         </a>
       `;
       list.appendChild(li);
+
     }
     
   });
