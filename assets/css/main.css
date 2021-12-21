@@ -1,5 +1,11 @@
+/**********
+ * Colors *
+ **********/
+/**********
+ * Mixins *
+ **********/
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -8,17 +14,30 @@ body {
 
 .container {
   margin: 2rem auto;
-  border: 0.25rem dashed #ccc;
+  border: 0.25rem dashed #cccccc;
   border-radius: 1rem;
   width: fit-content;
   height: fit-content;
   padding: 0.5rem;
 }
 
-h1 {
+header {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 32em) {
+  header {
+    justify-content: start;
+  }
+}
+header h1 {
+  width: min-content;
+}
+@media (min-width: 32em) {
+  header h1 {
+    width: fit-content;
+  }
 }
 
 img {
@@ -44,15 +63,6 @@ li > p {
   margin-top: 1rem;
 }
 
-li > p a {
-  color: black;
-  text-decoration: none;
-}
-
-li > p a:hover {
-  text-decoration: underline;
-}
-
 svg {
   width: auto;
   height: 50px;
@@ -67,7 +77,7 @@ svg {
   visibility: hidden;
   width: fit-content;
   background-color: black;
-  color: #fff;
+  color: white;
   text-align: center;
   border-radius: 6px;
   padding: 1rem;
@@ -82,25 +92,28 @@ svg {
 }
 
 .project-link {
+  background-color: #555555;
+  color: white;
+  border-radius: 7px;
+  transition: 1s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   display: block;
-  background-color: #555;
-  border-radius: 6px;
   padding: 1rem;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
-  transition: 1s;
   width: 200px;
   height: 80px;
   text-align: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+}
+.project-link:hover {
+  background-color: black;
 }
 
 .project-link p {
   opacity: 1;
   transition: 0.5s;
   font-size: 0.8rem;
-  color: #fff;
+  color: white;
   margin-bottom: 0;
   font-weight: lighter;
 }
@@ -110,34 +123,30 @@ svg {
   opacity: 1;
 }
 
-.project-link:hover {
-  background-color: black;
-  color: white;
-}
-
 .project-link:hover p {
   opacity: 0;
 }
 
 .details-link {
-  padding: 0.25rem 0.5rem 0.4rem 0.5rem;
-  background-color: #555;
+  background-color: #555555;
   color: white;
   border-radius: 7px;
   transition: 1s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem 0.4rem 0.5rem;
 }
-
 .details-link:hover {
   background-color: black;
-  text-decoration: none;
 }
 
 .social-list {
   justify-content: left;
 }
 
-.project-list > li > p {
+.project-list li > p {
   display: flex;
   justify-content: space-evenly;
 }
+
+/*# sourceMappingURL=main.css.map */

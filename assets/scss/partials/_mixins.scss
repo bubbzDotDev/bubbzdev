@@ -1,0 +1,34 @@
+@use 'colors' as *;
+
+/**********
+ * Mixins *
+ **********/
+
+// Screen size for breakpoints
+$break-small: 32em;
+
+// Breakpoints
+@mixin breakpoint($break) {
+  @if $break == 'small' {
+    @media (min-width: $break-small) {
+      @content;
+    }
+  } @else {
+    @media ($break) {
+      @content;
+    }
+  }
+}
+
+// Cards
+@mixin card {
+  background-color: $card-bg-color;
+  color: $card-text-color;
+  border-radius: 7px;
+  transition: 1s;
+  box-shadow: 5px 5px 10px $card-shadow-color;
+
+  &:hover {
+    background-color: $card-hover-bg-color;
+  }
+}

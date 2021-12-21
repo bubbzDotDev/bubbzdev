@@ -1,0 +1,19 @@
+/**********
+ * Colors *
+ **********/
+
+// Define color names in palette
+$black: hsl(0,0%,0%);
+$white: hsl(0,0%,100%);
+$light-gray: hsl(0,0%,80%);
+$dark-gray: hsl(0,0%,33.3%);
+$almost-black: hsla(0, 0%, 0%, 0.6);
+
+// Apply colors to elements
+$outside-border-color: $light-gray;
+$card-bg-color: $dark-gray;
+$card-shadow-color: $almost-black;
+$card-text-color: $white;
+$tooltip-bg-color: $black;
+$tooltip-text-color: $white;
+$card-hover-bg-color: $black;

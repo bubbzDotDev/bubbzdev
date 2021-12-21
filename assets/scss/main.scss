@@ -1,0 +1,136 @@
+@use 'partials' as *;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.container {
+  margin: 2rem auto;
+  border: 0.25rem dashed $outside-border-color;
+  border-radius: 1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include breakpoint('small') {
+    justify-content: start;
+  }
+
+  h1 {
+    width: min-content;
+
+    @include breakpoint('small') {
+      width: fit-content;
+    }
+  }
+}
+
+img {
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+li > p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+svg {
+  width: auto;
+  height: 50px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: $tooltip-bg-color;
+  color: $tooltip-text-color;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 1s;
+  font-weight: bold;
+}
+
+.project-link {
+  @include card;
+
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+}
+
+.project-link p {
+  opacity: 1;
+  transition: 0.5s;
+  font-size: 0.8rem;
+  color: $card-text-color;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-link:hover p {
+  opacity: 0;
+}
+
+.details-link {
+  @include card;
+  
+  text-decoration: none;
+  padding: 0.25rem 0.5rem 0.4rem 0.5rem;
+}
+
+.social-list {
+  justify-content: left;
+}
+
+.project-list {
+
+  li > p {
+    display: flex;
+    justify-content: space-evenly;
+  }
+} 
