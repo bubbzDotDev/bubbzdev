@@ -50,7 +50,7 @@
   "clients": [
     {
       "name": "Lost & Found Pros",
-      "description": "Built with Vue and backend is in development",
+      "description": "Frontend built with Vue",
       "link": "https://www.lostandfoundpros.com/",
       "code": "",
       "video": ""
