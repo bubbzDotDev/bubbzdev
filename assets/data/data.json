@@ -47,6 +47,15 @@
       "video": ""
     }
   ],
+  "clients": [
+    {
+      "name": "Lost & Found Pros",
+      "description": "Built with Vue and backend is in development",
+      "link": "https://www.lostandfoundpros.com/",
+      "code": "",
+      "video": ""
+    }
+  ],
   "social": [
     {
       "name": "LinkedIn",

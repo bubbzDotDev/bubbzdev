@@ -60,6 +60,11 @@ fetch('assets/data/data.json')
   const projectList = document.querySelector('.project-list');
   displayProjects(projects, projectList);
 
+  // Clients
+  const clients = data.clients;
+  const clientList = document.querySelector('.client-list');
+  displayProjects(clients, clientList);
+
   // Social
   const social = data.social;
   const socialList = document.querySelector('.social-list');

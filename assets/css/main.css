@@ -134,11 +134,13 @@ svg {
   background-color: black;
 }
 
-.social-list {
+.social-list,
+.client-list {
   justify-content: left;
 }
 
-.project-list li > p {
+.project-list li > p,
+.client-list li > p {
   display: flex;
   justify-content: space-evenly;
 }

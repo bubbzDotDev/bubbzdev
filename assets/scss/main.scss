@@ -123,11 +123,13 @@ svg {
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
 }
 
-.social-list {
+.social-list,
+.client-list {
   justify-content: left;
 }
 
-.project-list {
+.project-list,
+.client-list {
 
   li > p {
     display: flex;
