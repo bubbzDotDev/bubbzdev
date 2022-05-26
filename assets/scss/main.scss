@@ -123,9 +123,14 @@ svg {
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
 }
 
-.social-list,
-.client-list {
+.social-list {
   justify-content: left;
+}
+
+.client-list {
+  @include breakpoint('small') {
+    justify-content: left;
+  }
 }
 
 .project-list,

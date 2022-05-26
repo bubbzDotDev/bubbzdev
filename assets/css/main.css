@@ -134,9 +134,14 @@ svg {
   background-color: black;
 }
 
-.social-list,
-.client-list {
+.social-list {
   justify-content: left;
+}
+
+@media (min-width: 32em) {
+  .client-list {
+    justify-content: left;
+  }
 }
 
 .project-list li > p,
