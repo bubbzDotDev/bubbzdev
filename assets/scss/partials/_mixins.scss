@@ -2,11 +2,16 @@
 
 // Screen size for breakpoints
 $break-small: 32em;
+$break-medium: 37.688em;
 
 // Breakpoints
 @mixin breakpoint($break) {
   @if $break == 'small' {
     @media (min-width: $break-small) {
+      @content;
+    }
+  } @else if $break == 'medium' {
+    @media (min-width: $break-medium) {
       @content;
     }
   } @else {

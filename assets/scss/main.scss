@@ -128,7 +128,7 @@ svg {
 }
 
 .client-list {
-  @include breakpoint('small') {
+  @include breakpoint('medium') {
     justify-content: left;
   }
 }

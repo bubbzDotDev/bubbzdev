@@ -138,7 +138,7 @@ svg {
   justify-content: left;
 }
 
-@media (min-width: 32em) {
+@media (min-width: 37.688em) {
   .client-list {
     justify-content: left;
   }
