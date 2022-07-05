@@ -83,7 +83,7 @@ svg {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
   font-weight: bold;
   white-space: nowrap;
 }
@@ -92,7 +92,7 @@ svg {
   background-color: #555555;
   color: white;
   border-radius: 7px;
-  transition: 1s;
+  transition: 0.5s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   display: block;
   padding: 1rem;
@@ -128,7 +128,7 @@ svg {
   background-color: #555555;
   color: white;
   border-radius: 7px;
-  transition: 1s;
+  transition: 0.5s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   text-decoration: none;
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
