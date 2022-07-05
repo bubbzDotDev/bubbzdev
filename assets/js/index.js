@@ -65,6 +65,11 @@ fetch('assets/data/data.json')
   const clientList = document.querySelector('.client-list');
   displayProjects(clients, clientList);
 
+  // Deploying
+  const deploy = data.deploy;
+  const deployList = document.querySelector('.deploy-list');
+  displayIcons(deploy, deployList);
+
   // Social
   const social = data.social;
   const socialList = document.querySelector('.social-list');

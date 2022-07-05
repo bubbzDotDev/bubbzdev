@@ -13,8 +13,8 @@ body {
   border: 0.25rem dashed $outside-border-color;
   border-radius: 1rem;
   width: 95%;
-  max-width: fit-content;
   padding: 0.5rem;
+  max-width: 425px;
 }
 
 header {
@@ -46,6 +46,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 95%;
+  margin: 0 auto;
 }
 
 li {
@@ -84,6 +86,7 @@ svg {
   opacity: 0;
   transition: opacity 1s;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .project-link {
@@ -127,12 +130,6 @@ svg {
   justify-content: left;
 }
 
-.client-list {
-  @include breakpoint('medium') {
-    justify-content: left;
-  }
-}
-
 .project-list,
 .client-list {
 
@@ -141,3 +138,7 @@ svg {
     justify-content: space-evenly;
   }
 } 
+
+h3 {
+  text-align: center;
+}

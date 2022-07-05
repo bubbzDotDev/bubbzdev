@@ -11,8 +11,8 @@ body {
   border: 0.25rem dashed #cccccc;
   border-radius: 1rem;
   width: 95%;
-  max-width: fit-content;
   padding: 0.5rem;
+  max-width: 425px;
 }
 
 header {
@@ -45,6 +45,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 95%;
+  margin: 0 auto;
 }
 
 li {
@@ -83,6 +85,7 @@ svg {
   opacity: 0;
   transition: opacity 1s;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .project-link {
@@ -138,16 +141,14 @@ svg {
   justify-content: left;
 }
 
-@media (min-width: 37.688em) {
-  .client-list {
-    justify-content: left;
-  }
-}
-
 .project-list li > p,
 .client-list li > p {
   display: flex;
   justify-content: space-evenly;
+}
+
+h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
