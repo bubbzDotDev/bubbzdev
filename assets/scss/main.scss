@@ -96,8 +96,9 @@ svg {
   padding: 1rem;
   text-decoration: none;
   font-weight: bold;
-  width: 200px;
-  height: 80px;
+  width: 100%;
+  max-width: 200px;
+  height: fit-content;
   text-align: center;
 }
 
