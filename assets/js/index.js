@@ -2,7 +2,7 @@ const displayIcons = (items, list) => {
   items.forEach(item => {
     const li = document.createElement('li');
     li.innerHTML = `
-      <a href="${item.link}" target="_blank" rel="noopener" aria-label="${item.name}">
+      <a href="${item.link}" target="${item.target}" rel="noopener" aria-label="${item.name}">
         <span class="tooltip">
           <span class="tooltiptext">${item.name}</span>
           ${item.logo}
@@ -75,4 +75,8 @@ fetch('assets/data/data.json')
   const socialList = document.querySelector('.social-list');
   displayIcons(social, socialList);
 
+  // Contact
+  const contact = data.contact;
+  const contactList = document.querySelector('.contact-list');
+  displayIcons(contact, contactList);
 });

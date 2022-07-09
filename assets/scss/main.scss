@@ -6,6 +6,7 @@ body {
   display: flex;
   align-items: center;
   margin: 0 2rem;
+  padding-bottom: 1rem;
 }
 
 .container {
@@ -33,11 +34,11 @@ header {
       width: fit-content;
     }
   }
-}
 
-img {
-  border-radius: 50%;
-  margin: 0.5rem;
+  img {
+    border-radius: 50%;
+    margin: 0.5rem;
+  }
 }
 
 ul {
@@ -127,7 +128,9 @@ svg {
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
 }
 
-.social-list {
+.social-list,
+.deploy-list,
+.contact-list {
   justify-content: left;
 }
 
