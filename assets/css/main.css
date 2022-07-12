@@ -9,27 +9,44 @@ body {
 
 .container {
   margin: 2rem auto;
-  border: 0.25rem dashed #cccccc;
+  border: 0.25rem dashed rgba(204, 204, 204, 0.432);
   border-radius: 1rem;
   width: 95%;
   padding: 0.5rem;
-  max-width: 425px;
+}
+@media (min-width: 750px) {
+  .container {
+    border: 0.25rem dashed rgba(204, 204, 204, 0.432);
+  }
+}
+@media (min-width: 1220px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "h h h h" "m m m m" "m m m m";
+  }
 }
 
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  grid-area: h;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   header {
     justify-content: start;
+  }
+}
+@media (min-width: 750px) {
+  header {
+    justify-content: center;
   }
 }
 header h1 {
   width: min-content;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   header h1 {
     width: fit-content;
   }
@@ -37,6 +54,74 @@ header h1 {
 header img {
   border-radius: 50%;
   margin: 0.5rem;
+}
+
+main {
+  grid-area: m;
+}
+@media (min-width: 750px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t p" "d p" "s s" "c c";
+  }
+}
+@media (min-width: 800px) {
+  main {
+    grid-template-areas: "t p" "d p" "s p" "c c";
+  }
+}
+@media (min-width: 1460px) {
+  main {
+    grid-template-columns: 5fr 3fr 2fr 2fr 2fr;
+    grid-template-areas: "p t d s c" "p t d s c" "p t d s c";
+  }
+}
+
+.tool-section {
+  grid-area: t;
+}
+
+.project-section {
+  grid-area: p;
+}
+.project-section h2 {
+  grid-area: ph;
+}
+.project-section .client-project-subsection {
+  grid-area: pc;
+}
+.project-section .personal-project-subsection {
+  grid-area: pp;
+}
+@media (min-width: 1792px) {
+  .project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ph ph" "pc pp";
+  }
+}
+
+.deploy-section {
+  grid-area: d;
+}
+
+.social-section {
+  grid-area: s;
+}
+
+.contact-section {
+  grid-area: c;
+}
+
+@media (min-width: 750px) {
+  section {
+    background-color: rgba(204, 204, 204, 0.432);
+    border-radius: 7px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 ul {
@@ -47,6 +132,7 @@ ul {
   justify-content: space-evenly;
   width: 95%;
   margin: 0 auto;
+  max-width: 527px;
 }
 
 li {
@@ -76,7 +162,7 @@ svg {
   color: white;
   text-align: center;
   border-radius: 6px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   position: absolute;
   z-index: 1;
   top: 100%;
@@ -152,6 +238,30 @@ svg {
 
 h3 {
   text-align: center;
+}
+
+@media (min-width: 750px) {
+  .deploy-list,
+.social-list,
+.contact-list {
+    justify-content: center;
+  }
+}
+@media (min-width: 1460px) {
+  .deploy-list,
+.social-list,
+.contact-list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1460px) {
+  .tool-section,
+.deploy-section,
+.social-section,
+.contact-section {
+    height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

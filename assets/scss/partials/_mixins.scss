@@ -1,8 +1,12 @@
 @use 'colors' as *;
 
 // Screen size for breakpoints
-$break-small: 32em;
-$break-medium: 37.688em;
+$break-small: 512px;
+$break-medium: 750px;
+$break-medium-large: 800px;
+$break-large: 1220px;
+$break-extra-large: 1460px;
+$break-super-duper-large: 1792px;
 
 // Breakpoints
 @mixin breakpoint($break) {
@@ -12,6 +16,22 @@ $break-medium: 37.688em;
     }
   } @else if $break == 'medium' {
     @media (min-width: $break-medium) {
+      @content;
+    }
+  } @else if $break == 'medium-large' {
+    @media (min-width: $break-medium-large) {
+      @content;
+    }
+  } @else if $break == 'large' {
+    @media (min-width: $break-large) {
+      @content;
+    }
+  } @else if $break == 'extra-large' {
+    @media (min-width: $break-extra-large) {
+      @content;
+    }
+  } @else if $break == 'super-duper-large' {
+    @media (min-width: $break-super-duper-large) {
       @content;
     }
   } @else {
@@ -32,4 +52,9 @@ $break-medium: 37.688em;
   &:hover {
     background-color: $card-hover-bg-color;
   }
+}
+
+@mixin section-card {
+  background-color: $section-card-bg-color;
+  border-radius: 7px;
 }
