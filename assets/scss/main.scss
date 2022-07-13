@@ -5,29 +5,21 @@ body {
   font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  flex-direction: column;
 }
 
 .container {
   margin: 2rem auto;
   border: 0.25rem dashed $outside-border-color;
   border-radius: 1rem;
-  width: 95%;
+  width: 98%;
   padding: 0.5rem;
-  // max-width: 992px;
 
   @include breakpoint('medium') {
     border: 0.25rem dashed $section-card-bg-color;
-  }
-
-  @include breakpoint('large') {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
-      "h h h h"
-      "m m m m"
-      "m m m m";
   }
 }
 
@@ -35,13 +27,11 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   grid-area: h;
+  position: relative;
 
   @include breakpoint('small') {
-    justify-content: start;
-  }
-
-  @include breakpoint('medium') {
     justify-content: center;
   }
 
@@ -52,10 +42,30 @@ header {
       width: fit-content;
     }
   }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   img {
     border-radius: 50%;
     margin: 0.5rem;
+  }
+}
+
+.header-img-subheading {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+
+  @include breakpoint('small') {
+    bottom: -20px;
   }
 }
 
@@ -66,22 +76,30 @@ main {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-      "t p"
-      "d p"
-      "s s"
+      "p t"
+      "p t"
+      "p d"
+      "s d"
       "c c";
   }
 
   @include breakpoint('medium-large') {
     grid-template-areas: 
-      "t p"
-      "d p"
-      "s p"
+      "p t"
+      "p d"
+      "p s"
       "c c";
   }
 
+  @include breakpoint('large') {
+    grid-template-areas: 
+      "p t"
+      "p d"
+      "s c";
+  }
+
   @include breakpoint('extra-large') {
-    grid-template-columns: 5fr 3fr 2fr 2fr 2fr;
+    grid-template-columns: 5fr 3fr 3fr 2fr 2fr;
     grid-template-areas: 
       "p t d s c"
       "p t d s c"
@@ -115,6 +133,13 @@ main {
       "ph ph"
       "pc pp";
   }
+
+  @include breakpoint('what-the-heck-large') {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "ph ph ph"
+      "pc pp pp";
+  }
 }
 
 .deploy-section {
@@ -130,11 +155,13 @@ main {
 }
 
 section {
-  @include breakpoint('medium') {
-    @include section-card;
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
+  @include section-card;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  div {
+    width: 100%;
   }
 }
 
@@ -144,13 +171,13 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 527px;
 }
 
 li {
-  margin: 0.5rem;
+  padding: 24px;
+  margin: 0;
   text-align: center;
 }
 
@@ -191,14 +218,15 @@ svg {
 .project-link {
   @include card;
 
-  display: block;
+  display: inline-block;
   padding: 1rem;
   text-decoration: none;
   font-weight: bold;
-  width: 100%;
+  width: 75%;
   max-width: 200px;
   height: fit-content;
   text-align: center;
+  margin: 0;
 }
 
 .project-link p {
@@ -226,12 +254,6 @@ svg {
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
 }
 
-.social-list,
-.deploy-list,
-.contact-list {
-  justify-content: left;
-}
-
 .project-list,
 .client-list {
 
@@ -245,15 +267,27 @@ h3 {
   text-align: center;
 }
 
-.deploy-list,
 .social-list,
 .contact-list {
-  @include breakpoint('medium') {
-    justify-content: center;
-  }
+  justify-content: center;
 
   @include breakpoint('extra-large') {
     flex-direction: column;
+  }
+
+  @include breakpoint('ridiculous-large') {
+    flex-direction: row;
+  }
+}
+
+.tool-list,
+.deploy-list,
+.social-list,
+.contact-list {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -263,5 +297,27 @@ h3 {
 .contact-section {
   @include breakpoint('extra-large') {
     height: fit-content;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0;
+
+  @include breakpoint('small') {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 1rem;
   }
 }

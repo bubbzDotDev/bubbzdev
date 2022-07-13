@@ -3,10 +3,12 @@
 // Screen size for breakpoints
 $break-small: 512px;
 $break-medium: 750px;
-$break-medium-large: 800px;
-$break-large: 1220px;
+$break-medium-large: 1230px;
+$break-large: 1378px;
 $break-extra-large: 1460px;
 $break-super-duper-large: 1792px;
+$break-ridiculous-large: 1900px;
+$break-what-the-heck-large: 2920px;
 
 // Breakpoints
 @mixin breakpoint($break) {
@@ -32,6 +34,14 @@ $break-super-duper-large: 1792px;
     }
   } @else if $break == 'super-duper-large' {
     @media (min-width: $break-super-duper-large) {
+      @content;
+    }
+  } @else if $break == 'ridiculous-large' {
+    @media (min-width: $break-ridiculous-large) {
+      @content;
+    }
+  } @else if $break == 'what-the-heck-large' {
+    @media (min-width: $break-what-the-heck-large) {
       @content;
     }
   } @else {
