@@ -13,12 +13,18 @@ body {
   margin: 2rem auto;
   border: 0.25rem dashed rgba(204, 204, 204, 0.432);
   border-radius: 1rem;
-  width: 98%;
+  width: 90%;
   padding: 0.5rem;
 }
 @media (min-width: 750px) {
   .container {
     border: 0.25rem dashed rgba(204, 204, 204, 0.432);
+    width: 95%;
+  }
+}
+@media (min-width: 1230px) {
+  .container {
+    width: 98%;
   }
 }
 
@@ -28,7 +34,6 @@ header {
   align-items: center;
   flex-direction: column;
   grid-area: h;
-  position: relative;
 }
 @media (min-width: 512px) {
   header {
@@ -37,6 +42,8 @@ header {
 }
 header h1 {
   width: min-content;
+  line-height: 2rem;
+  margin: 0;
 }
 @media (min-width: 512px) {
   header h1 {
@@ -48,24 +55,38 @@ header h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
-.header-container img {
+@media (min-width: 512px) {
+  .header-container {
+    flex-wrap: nowrap;
+  }
+}
+.header-container > img {
   border-radius: 50%;
   margin: 0.5rem;
 }
 
+.header-heading-container {
+  position: relative;
+}
+
 .header-img-subheading {
   position: absolute;
-  bottom: -10px;
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   height: auto;
   max-width: 250px;
+  margin: 0;
 }
 @media (min-width: 512px) {
   .header-img-subheading {
-    bottom: -20px;
+    bottom: -35px;
+    left: 0;
+    transform: none;
+    opacity: 0.7;
   }
 }
 
@@ -306,7 +327,6 @@ footer {
 @media (min-width: 512px) {
   footer {
     flex-direction: row;
-    justify-content: space-around;
   }
 }
 footer div {

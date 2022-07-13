@@ -2,6 +2,7 @@
 
 // Screen size for breakpoints
 $break-small: 512px;
+$break-medium-small: 546px;
 $break-medium: 750px;
 $break-medium-large: 1230px;
 $break-large: 1378px;
@@ -14,6 +15,10 @@ $break-what-the-heck-large: 2920px;
 @mixin breakpoint($break) {
   @if $break == 'small' {
     @media (min-width: $break-small) {
+      @content;
+    }
+  } @else if $break == 'medium-small' {
+    @media (min-width: $break-medium-small) {
       @content;
     }
   } @else if $break == 'medium' {

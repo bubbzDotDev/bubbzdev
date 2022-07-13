@@ -15,11 +15,16 @@ body {
   margin: 2rem auto;
   border: 0.25rem dashed $outside-border-color;
   border-radius: 1rem;
-  width: 98%;
+  width: 90%;
   padding: 0.5rem;
 
   @include breakpoint('medium') {
     border: 0.25rem dashed $section-card-bg-color;
+    width: 95%;
+  }
+
+  @include breakpoint('medium-large') {
+    width: 98%;
   }
 }
 
@@ -29,7 +34,6 @@ header {
   align-items: center;
   flex-direction: column;
   grid-area: h;
-  position: relative;
 
   @include breakpoint('small') {
     justify-content: center;
@@ -37,6 +41,8 @@ header {
 
   h1 {
     width: min-content;
+    line-height: 2rem;
+    margin: 0;
 
     @include breakpoint('small') {
       width: fit-content;
@@ -48,24 +54,37 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 
-  img {
+  @include breakpoint('small') {
+    flex-wrap: nowrap;
+  }
+
+  & > img {
     border-radius: 50%;
     margin: 0.5rem;
   }
 }
 
+.header-heading-container {
+  position: relative;
+}
+
 .header-img-subheading {
   position: absolute;
-  bottom: -10px;
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   height: auto;
   max-width: 250px;
+  margin: 0;
 
   @include breakpoint('small') {
-    bottom: -20px;
+    bottom: -35px;
+    left: 0;
+    transform: none;
+    opacity: 0.7;
   }
 }
 
@@ -310,7 +329,6 @@ footer {
 
   @include breakpoint('small') {
     flex-direction: row;
-    justify-content: space-around;
   }
 
   div {
