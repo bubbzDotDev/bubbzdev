@@ -81,7 +81,7 @@ header {
   margin: 0;
 
   @include breakpoint('small') {
-    bottom: -35px;
+    bottom: -40px;
     left: 0;
     transform: none;
     opacity: 0.7;
