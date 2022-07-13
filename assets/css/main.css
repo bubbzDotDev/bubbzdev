@@ -337,4 +337,9 @@ footer div {
   margin: 1rem;
 }
 
+.contact-list li:first-child {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
