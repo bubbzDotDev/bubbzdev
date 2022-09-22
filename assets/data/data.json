@@ -62,13 +62,6 @@
       "link": "https://www.bulletheads.org/",
       "code": "https://github.com/bubbzDotDev/bthd-vue",
       "video": "https://www.youtube.com/watch?v=utkdUL-7cBU"
-    },
-    {
-      "name": "Discord Bot",
-      "description": "Built with Python and supporting over 800 Discord servers",
-      "link": "https://www.announcementbot.live/",
-      "code": "",
-      "video": ""
     }
   ],
   "clients": [
