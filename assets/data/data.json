@@ -121,12 +121,6 @@
   ],
   "contact": [
     {
-      "name": "Discord",
-      "logo": "<img src='assets/images/discord.svg' width='50' height='38' alt='Discord logo' loading='lazy'>",
-      "link": "https://discord.gg/MY4rwaXajV",
-      "target": "_blank"
-    },
-    {
       "name": "Email",
       "logo": "<img src='assets/images/email.svg' width='50' height='50' alt='Envelope' loading='lazy'>",
       "link": "mailto:bubbz@bubbz.dev?subject=Hello from your website!",
