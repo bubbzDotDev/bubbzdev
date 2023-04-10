@@ -11,7 +11,7 @@ const displayIcons = (items, list) => {
     `;
     list.appendChild(li);
   });
-}
+};
 
 const displayProjects = (items, list) => {
   items.forEach(item => {
@@ -30,21 +30,32 @@ const displayProjects = (items, list) => {
         </p>
       `;
       list.appendChild(li);
-
-    } else {
-
+      return;
+    } 
+    
+    if (item.code) {
       li.innerHTML = `
         <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
           ${item.name}
           <p>${item.description}</p>
         </a>
+        <p>
+          <a class="details-link" href="${item.code}" target="_blank" rel="noopener">code</a>
+        </p>
       `;
       list.appendChild(li);
-
+      return;
     }
-    
+
+    li.innerHTML = `
+      <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
+        ${item.name}
+        <p>${item.description}</p>
+      </a>
+    `;
+    list.appendChild(li);
   });
-}
+};
 
 fetch('assets/data/data.json')
 .then(response => response.json())
