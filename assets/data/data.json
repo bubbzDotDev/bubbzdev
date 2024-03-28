@@ -82,12 +82,6 @@
   ],
   "projects": [
     {
-      "name": "AI Chat Bots",
-      "description": "Built with Vue and Nest",
-      "link": "https://between2bots.com/",
-      "code": "https://github.com/bubbzDotDev/b2b-client"
-    },
-    {
       "name": "Gaming Community",
       "description": "Built with Vue, Firebase Auth, Firestore, and a Cloud Function",
       "link": "https://www.bulletheads.org/",
