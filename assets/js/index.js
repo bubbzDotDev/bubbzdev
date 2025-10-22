@@ -21,7 +21,7 @@ const displayProjects = (items, list) => {
 
       li.innerHTML = `
         <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
-          ${item.name}
+          <span class="project-name">${item.name}</span>
           <p>${item.description}</p>
         </a>
         <p>
@@ -36,7 +36,7 @@ const displayProjects = (items, list) => {
     if (item.code) {
       li.innerHTML = `
         <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
-          ${item.name}
+          <span class="project-name">${item.name}</span>
           <p>${item.description}</p>
         </a>
         <p>
@@ -49,7 +49,7 @@ const displayProjects = (items, list) => {
 
     li.innerHTML = `
       <a class="project-link" href="${item.link}" target="_blank" rel="noopener">
-        ${item.name}
+        <span class="project-name">${item.name}</span>
         <p>${item.description}</p>
       </a>
     `;

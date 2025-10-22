@@ -9,17 +9,23 @@ body {
   margin: 0 2rem;
   padding-bottom: 2rem;
   flex-direction: column;
+  background: linear-gradient(135deg, $primary-purple 0%, $secondary-purple 50%, $accent-pink 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .container {
   margin: 2rem auto;
-  border: 0.25rem dashed $outside-border-color;
-  border-radius: 1rem;
+  border: none;
+  border-radius: 1.5rem;
   width: 90%;
   padding: 0.5rem;
+  background: rgba($white, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba($black, 0.3), 0 0 0 1px rgba($white, 0.2);
+  animation: fadeInUp 0.8s ease-out;
 
   @include breakpoint('medium') {
-    border: 0.25rem dashed $section-card-bg-color;
     width: 95%;
   }
 
@@ -40,51 +46,75 @@ header {
   }
 
   h1 {
-    width: min-content;
+    width: fit-content;
     line-height: 2rem;
     margin: 0;
+    white-space: nowrap;
+    font-size: 1.5rem;
 
     @include breakpoint('small') {
-      width: fit-content;
+      font-size: 2rem;
+    }
+
+    @include breakpoint('medium') {
+      font-size: 2.5rem;
     }
   }
 }
 
 .header-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
 
   @include breakpoint('small') {
-    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
   }
 
   & > img {
     border-radius: 50%;
     margin: 0.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05) rotate(5deg);
+    }
   }
 }
 
 .header-heading-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint('small') {
+    align-items: flex-start;
+  }
 }
 
 .header-img-subheading {
-  position: absolute;
-  bottom: -17px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   height: auto;
-  max-width: 250px;
-  margin: 0;
+  max-width: 200px;
+  margin-top: 1rem;
 
   @include breakpoint('small') {
+    position: absolute;
     bottom: -40px;
     left: 0;
-    transform: none;
+    margin-top: 0;
     opacity: 0.7;
+    max-width: 300px;
+  }
+
+  @include breakpoint('medium') {
+    max-width: 350px;
+    bottom: -50px;
   }
 }
 
@@ -237,24 +267,36 @@ svg {
 .project-link {
   @include card;
 
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   text-decoration: none;
   font-weight: bold;
   width: 75%;
   max-width: 200px;
-  height: fit-content;
+  min-height: 100px;
   text-align: center;
   margin: 0;
+
+  .project-name {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover .project-name {
+    transform: translateY(-10px);
+  }
 }
 
 .project-link p {
-  opacity: 1;
-  transition: 0.5s;
+  transition: opacity 0.5s ease;
   font-size: 0.8rem;
   color: $card-text-color;
   margin-bottom: 0;
+  margin-top: 0.5rem;
   font-weight: lighter;
+  opacity: 0;
 }
 
 .tooltip:hover .tooltiptext {
@@ -263,14 +305,23 @@ svg {
 }
 
 .project-link:hover p {
-  opacity: 0;
+  opacity: 1;
 }
 
 .details-link {
-  @include card;
-  
+  background: linear-gradient(135deg, $accent-pink 0%, $accent-red 100%);
+  color: $card-text-color;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba($accent-pink, 0.4);
   text-decoration: none;
   padding: 0.25rem 0.5rem 0.4rem 0.5rem;
+
+  &:hover {
+    background: linear-gradient(135deg, $accent-red 0%, $accent-pink 100%);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba($accent-pink, 0.6);
+  }
 }
 
 .project-list,
@@ -282,8 +333,21 @@ svg {
   }
 } 
 
+h2 {
+  background: linear-gradient(135deg, $primary-purple 0%, $secondary-purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+}
+
 h3 {
   text-align: center;
+  background: linear-gradient(135deg, $primary-purple 0%, $secondary-purple 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 
 .social-list,
@@ -326,6 +390,8 @@ footer {
   justify-content: center;
   width: 100%;
   margin: 1rem 0;
+  color: $white;
+  text-shadow: 0 2px 4px rgba($black, 0.3);
 
   @include breakpoint('small') {
     flex-direction: row;
@@ -343,4 +409,28 @@ footer {
 .contact-list li:first-child {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Icon hover effects
+li svg,
+li img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+li:hover svg,
+li:hover img {
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 5px 10px rgba($primary-purple, 0.4));
 }
